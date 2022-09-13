@@ -32,12 +32,12 @@
       </nav>
       <ul class="ul-up-cont">
         <li>
-          <a href="mailto:info@devstudio.com" class="link contact-up"
+          <a href="mailto:info@devstudio.com" class="contact-up link"
             ><img class="icon" src="./images/envelope.svg" alt="">info@devstudio.com</a
           >
         </li>
         <li>
-          <a href="tel:+380961111111" class="link contact-up"
+          <a href="tel:+380961111111" class="contact-up link"
             ><img class="icon" src="./images/tel.svg" alt="">+38 096 111 11 11</a
           >
         </li>
@@ -59,7 +59,7 @@
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         </div>
         <div>
-          <button class="button" type="button">Замовити послугу</button>
+          <button class="button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -142,34 +142,6 @@
             <h3 class="section-title2">Ігор Дем'яненко</h3>
             <p class="section-text1">Product Designer</p>
             <ul class="social-inds">
-              <!-- <li>
-                <a class="button-href-icon">
-                  <svg class="href-icon" width="20" height="20">
-                    <use href="./images/sprite.svg#icon-instagram2"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <button class="button-href-icon">
-                  <svg class="href-icon">
-                    <use href="./images/sprite.svg#icon-twitter2"></use>
-                  </svg>
-                </button>
-              </li>
-              <li>
-                <button class="button-href-icon">
-                  <svg class="href-icon">
-                    <use href="./images/sprite.svg#icon-facebook2"></use>
-                  </svg>
-                </button>
-              </li>
-              <li>
-                <button class="button-href-icon">
-                  <svg class="href-icon">
-                    <use href="./images/sprite.svg#icon-linkedin2"></use>
-                  </svg>
-                </button>
-              </li> -->
               <li class="social-individual1"><a href=""></a></li>
               <li class="social-individual2"><a href=""></a></li>
               <li class="social-individual3"><a href=""></a></li>
@@ -320,5 +292,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+<div class="modal">
+<button type="button" class="close-btn" data-modal-close>
+  <svg class="modal-icon" width="11" height="11">
+    <use href="./images/icons.svg#icon-vector"></use>
+  </svg>
+</button>
+</div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
