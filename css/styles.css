@@ -1101,6 +1101,9 @@ background: var(--accent-color);
 }
 
 .flip-card-back {
+  /* display: flex; */
+  /* margin: 0; */
+  padding-top: 35%;
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
