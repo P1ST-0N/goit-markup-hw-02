@@ -1101,12 +1101,14 @@ background: var(--accent-color);
 }
 
 .flip-card-back {
-  /* display: flex; */
+  display: flex;
+  justify-content: center;
+  /* padding-left: 25%; */
   /* margin: 0; */
-  padding-top: 35%;
+  /* padding-top: 35%; */
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
-  /* align-items: center; */
+  align-items: center;
   /* text-align: center; */
 }
