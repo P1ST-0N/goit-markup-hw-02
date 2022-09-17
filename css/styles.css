@@ -1239,7 +1239,7 @@ textarea:focus {
   align-items: center;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--secondary-text-color);
+  color: var(--section-text-color);
 }
 .policy-link {
   margin-left: 4px;
@@ -1268,7 +1268,7 @@ textarea:focus {
 
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--white-text-color);
+  color: var(--main-white);
   
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
