@@ -19,53 +19,50 @@
   </head>
   <body>
     <!--верхня лінія-->
-    <header class="page-header conteiner">
-      <nav class="disp-flex">
-        <a href="./" class="logo-up"
-          >Web<span class="span-logo-up">Studio</span>
-        </a>
-        <ul class="site-nav">
-          <li><a class="header-nav-link link current" href="./">Студія</a></li>
-          <li><a href="./portfolio.html" class="header-nav-link link">Портфоліо</a></li>
-          <li><a href="" class="header-nav-link link">Контакти</a></li>
+    <header class="page-header">
+      <div class="container nav-flex">
+        <nav class="disp-flex">
+          <a class="logo link" href="./"
+            >Web<span class="logo-black">Studio</span>
+          </a>
+          <ul class="site-nav list">
+            <li class="header-nav-item"><a class="header-nav-link link current" href="./">Студія</a></li>
+            <li class="header-nav-item"><a class="header-nav-link link" href="./portfolio.html" >Портфоліо</a></li>
+            <li class="header-nav-item"><a class="header-nav-link link" href="" >Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contact-list list">
+          <li class="header-contact-item">
+            <a class="header-contact-link link" href="mailto:info@devstudio.com"
+              ><svg class="contact-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header-contact-item">
+            <a class="header-contact-link link" href="tel:+380961111111"
+              ><svg class="contact-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-mobile"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </nav>
-      <ul class="ul-up-cont">
-        <li>
-          <a href="mailto:info@devstudio.com" class="header-nav-link contact-up link"
-            ><img class="icon" src="./images/envelope.svg" alt="">info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="header-nav-link contact-up link"
-            ><img class="icon" src="./images/tel.svg" alt="">+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
+      
     </header>
 
     <main>
       <!--шапка-->
-      <section class="hero overlay">
-        <!-- Саша Репета говорив що в таких випадках потрібно перенос рядка через)) </br> -->
-        <!-- <img class="img"
-          src="./images/main-bg.jpg"
-          alt="team"
-          width="1600"
-          height="600"
-          ;
-        /> -->
-        <div>
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        </div>
-        <div>
-          <button class="button" type="button" data-modal-open>Замовити послугу</button>
-        </div>
+      <section class="hero">
+        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
       </section>
 
       <!-- особливості -->
-      <section class="section">
-        <div class="conteiner1">
+      <section class="features-section">
+        <div class="conteiner">
           <h2 class="section-title visually-hidden">наші особливості</h2>
           <ul class="ul-section1">
             <li class="list-item">
@@ -100,148 +97,199 @@
       </section>
 
       <!--чим займаємося-->
-      <section class="conteiner1">
-        <h2 class="section-title1">Чим ми займаємося</h2>
-        <ul class="img1">
-          <li class="work-item">
-            <img class="img"
-              src="./images/works_1.jpg"
-              alt="computer"
-              width="370"
-              height="294"
-            />
-            <p class="work-text">Десктопні додатки</p>
-          </li>
-          <li class="work-item">
-            <img class="img"
-              src="./images/works_2.jpg"
-              alt="notebook"
-              width="370"
-              height="294"
-            />
-            <p class="work-text">Мобільні додатки</p>
-          </li>
-          <li class="work-item">
-            <img class="img"
-              src="./images/works_3.jpg"
-              alt="tablet"
-              width="370"
-              height="294"
-            />
-            <p class="work-text">Дизайнерські рішення</p>
-          </li>
-        </ul>
+      <section class="work-section">
+        <div class="conteiner">
+          <h2 class="section-title1">Чим ми займаємося</h2>
+          <ul class="img1">
+            <li class="work-item">
+              <img class="img"
+                src="./images/works_1.jpg"
+                alt="computer"
+                width="370"
+                height="294"
+              />
+              <p class="work-text">Десктопні додатки</p>
+            </li>
+            <li class="work-item">
+              <img class="img"
+                src="./images/works_2.jpg"
+                alt="notebook"
+                width="370"
+                height="294"
+              />
+              <p class="work-text">Мобільні додатки</p>
+            </li>
+            <li class="work-item">
+              <img class="img"
+                src="./images/works_3.jpg"
+                alt="tablet"
+                width="370"
+                height="294"
+              />
+              <p class="work-text">Дизайнерські рішення</p>
+            </li>
+          </u
+        </div>
+        l>
       </section>
 
       <!--наша команда-->
-      <section class="conteiner2">
-        <h2 class="section-title1 section-title-team">Наша команда</h2>
-        <ul class="team-foto">
-          <li class="conteiner3">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="./images/team_1.jpg" alt="Ігор Дем'яненко" width="270" />
-                </div>
-                <div class="flip-card-back">
-                  <div>
-                    <h3>Путін ХУЙЛО</h3>
-                    <p>Все буде</p>
-                    <p>УКРАЇНА</p>
+      <section class="team-section">
+        <div class="conteiner">
+          <h2 class="section-title1 section-title-team">Наша команда</h2>
+          <ul class="team-list list">
+            <li class="team-item">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./images/team_1.jpg" alt="Ігор Дем'яненко" width="270" />
+                  </div>
+                  <div class="flip-card-back">
+                    <div>
+                      <h3>Путін ХУЙЛО</h3>
+                      <p>Все буде</p>
+                      <p>УКРАЇНА</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <h3 class="section-title2">Ігор Дем'яненко</h3>
-            <p class="section-text1">Product Designer</p>
-            <ul class="social-inds">
-              <li class="social-individual1"><a href=""></a></li>
-              <li class="social-individual2"><a href=""></a></li>
-              <li class="social-individual3"><a href=""></a></li>
-              <li class="social-individual4"><a href=""></a></li>
-            </ul>
-          </li>
-          <li class="conteiner3">
-            <img src="./images/team_2.jpg" alt="Ольга Рєпіна" width="270" />
-            <h3 class="section-title2">Ольга Рєпіна</h3>
-            <p class="section-text1">Frontend Developer</p>
-            <ul class="social-inds">
-              <li class="social-individual1"><a href=""></a></li>
-              <li class="social-individual2"><a href=""></a></li>
-              <li class="social-individual3"><a href=""></a></li>
-              <li class="social-individual4"><a href=""></a></li>
-            </ul>
-          </li>
-          <li class="conteiner3">
-            <img src="./images/team_3.jpg" alt="Микола Тарасов" width="270" />
-            <h3 class="section-title2">Микола Тарасов</h3>
-            <p class="section-text1">Marketing</p>
-            <ul class="social-inds">
-              <li class="social-individual1"><a href=""></a></li>
-              <li class="social-individual2"><a href=""></a></li>
-              <li class="social-individual3"><a href=""></a></li>
-              <li class="social-individual4"><a href=""></a></li>
-            </ul>
-          </li>
-          <li class="conteiner3">
-            <img src="./images/team_4.jpg" alt="Михайло Єрмаков" width="270" />
-            <h3 class="section-title2">Михайло Єрмаков</h3>
-            <p class="section-text1">UI Designer</p>
-            <ul class="social-inds">
-              <li class="social-individual1"><a href=""></a></li>
-              <li class="social-individual2"><a href=""></a></li>
-              <li class="social-individual3"><a href=""></a></li>
-              <li class="social-individual4"><a href=""></a></li>
-            </ul>
-          </li>
-        </ul>
+              <h3 class="section-title2">Ігор Дем'яненко</h3>
+              <p class="section-text1">Product Designer</p>
+              <ul class="social-inds">
+                <li class="social-individual1"><a href=""></a></li>
+                <li class="social-individual2"><a href=""></a></li>
+                <li class="social-individual3"><a href=""></a></li>
+                <li class="social-individual4"><a href=""></a></li>
+              </ul>
+            </li>
+            <li class="team-item">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./images/team_2.jpg" alt="Ольга Рєпіна" width="270" />
+                  </div>
+                  <div class="flip-card-back">
+                    <div>
+                      <h3>Путін ХУЙЛО</h3>
+                      <p>Все буде</p>
+                      <p>УКРАЇНА</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <h3 class="section-title2">Ольга Рєпіна</h3>
+              <p class="section-text1">Frontend Developer</p>
+              <ul class="social-inds">
+                <li class="social-individual1"><a href=""></a></li>
+                <li class="social-individual2"><a href=""></a></li>
+                <li class="social-individual3"><a href=""></a></li>
+                <li class="social-individual4"><a href=""></a></li>
+              </ul>
+            </li>
+            <li class="team-item">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./images/team_3.jpg" alt="Микола Тарасов" width="270" />
+                  </div>
+                  <div class="flip-card-back">
+                    <div>
+                      <h3>Путін ХУЙЛО</h3>
+                      <p>Все буде</p>
+                      <p>УКРАЇНА</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <h3 class="section-title2">Микола Тарасов</h3>
+              <p class="section-text1">Marketing</p>
+              <ul class="social-inds">
+                <li class="social-individual1"><a href=""></a></li>
+                <li class="social-individual2"><a href=""></a></li>
+                <li class="social-individual3"><a href=""></a></li>
+                <li class="social-individual4"><a href=""></a></li>
+              </ul>
+            </li>
+            <li class="team-item">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./images/team_4.jpg" alt="Михайло Єрмаков" width="270" />
+                  </div>
+                  <div class="flip-card-back">
+                    <div>
+                      <h3>Путін ХУЙЛО</h3>
+                      <p>Все буде</p>
+                      <p>УКРАЇНА</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <h3 class="section-title2">Михайло Єрмаков</h3>
+              <p class="section-text1">UI Designer</p>
+              <ul class="social-inds">
+                <li class="social-individual1"><a href=""></a></li>
+                <li class="social-individual2"><a href=""></a></li>
+                <li class="social-individual3"><a href=""></a></li>
+                <li class="social-individual4"><a href=""></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
       </section>
       <section class="client-section">
-        <h2 class="section-title1">Постійні клієнти</h2>
-        <ul class="company">
-          <li>
-            <a href="" class="company1">
-              <svg class="company-icon">
-                <use href="./images/sprite-logo1.svg#icon-logo1"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="" class="company1">
-              <svg class="company-icon">
-                <use href="./images/sprite-logo1.svg#icon-logo2"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="" class="company1">
-              <svg class="company-icon">
-                <use href="./images/sprite-logo1.svg#icon-logo3"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="" class="company1">
-              <svg class="company-icon">
-                <use href="./images/sprite-logo1.svg#icon-logo4"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="" class="company1">
-              <svg class="company-icon">
-                <use href="./images/sprite-logo1.svg#icon-logo5"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="" class="company1">
-              <svg class="company-icon">
-                <use href="./images/sprite-logo1.svg#icon-logo6"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="conteiner">
+          <h2 class="section-title1">Постійні клієнти</h2>
+          <ul class="client-list list">
+            <li class="client-item">
+              <a href="" class="client-link link">
+                <svg class="company-icon">
+                  <use href="./images/sprite-logo1.svg#icon-logo1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-item">
+              <a href="" class="client-link link">
+                <svg class="company-icon">
+                  <use href="./images/sprite-logo1.svg#icon-logo2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-item">
+              <a href="" class="client-link link">
+                <svg class="company-icon">
+                  <use href="./images/sprite-logo1.svg#icon-logo3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-item">
+              <a href="" class="client-link link">
+                <svg class="company-icon">
+                  <use href="./images/sprite-logo1.svg#icon-logo4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-item">
+              <a href="" class="client-link link">
+                <svg class="company-icon">
+                  <use href="./images/sprite-logo1.svg#icon-logo5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="client-item">
+              <a href="" class="client-link link">
+                <svg class="company-icon">
+                  <use href="./images/sprite-logo1.svg#icon-logo6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
       </section>
     </main>
 
